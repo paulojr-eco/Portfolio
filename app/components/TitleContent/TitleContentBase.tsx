@@ -27,7 +27,7 @@ const TitleContentBase: React.FC<TitleContentBaseProps> = ({ t }) => {
     };
   }, [subtitleIndex]);
   return (
-    <div className="pl-[4vw] md:pl-[10vw] flex flex-col gap-y-6">
+    <div className="md:pl-[10vw] flex flex-col gap-y-6">
       <p className="text-6xl"> Paulo Paiva </p>
       <div className="relative flex flex-row w-fit">
         <motion.div
@@ -62,7 +62,7 @@ const TitleContentBase: React.FC<TitleContentBaseProps> = ({ t }) => {
           }}
           className="absolute bg-black z-10 h-[48px] md:h-[24px] w-full"
         ></motion.div>
-        <div ref={subtitleRef} className="m">
+        <div ref={subtitleRef}>
           {t(subtitles.options[subtitleIndex])}
         </div>
       </div>
