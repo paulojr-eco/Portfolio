@@ -10,5 +10,13 @@
   "School Management System": "School Management System",
   "School Management System Description": "This app makes it possible to manage the data of students and employees of a school. Festures made available are based on CRUD operations of students and staff.",
   "Technologies Used": "Technologies Used",
-  "Visit": "Visit"
+  "Visit": "Visit",
+  "Clean Node API": "Clean Node API",
+  "Clean Node API Description": "API built through a NodeJS server based on the concepts of TDD (Test Driven Development) and SOLID.",
+  "Task Mate": "Task Mate",
+  "Task Mate Description": "It consists of a To Do List style system in which tasks to be completed can be handled. In addition, filters are available on such tasks.",
+  "Vakinha Burger": "Vakinha Burger",
+  "Vakinha Burger Description": "Vakinha Burger hamburger administration and management application made using the Flutter framework for the web during the DW10 event. The system was built based on Futter Modular and MobX.",
+  "Footer First": "Created with ",
+  "Footer Last": " by Paulo Paiva"
 }

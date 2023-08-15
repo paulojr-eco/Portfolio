@@ -1,5 +1,5 @@
 import { RxHamburgerMenu } from 'react-icons/rx';
-import SelectLanguageMenu from './SelectLanguageMenu/SelectLanguageMenu';
+import SelectLanguageMenu from '../SelectLanguageMenu/SelectLanguageMenu';
 import React from 'react';
 import Image from 'next/image';
 

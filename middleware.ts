@@ -6,13 +6,26 @@ acceptLanguage.languages(languages);
 
 export const config = {
   // matcher: '/:locale*'
-  matcher: ['/((?!api|_next/static|_next/image|image|assets|favicon.ico|profile.png|logo.png|cv-paulo.pdf|school-system-login.png|scroll-down-icon.gif|sw.js).*)']
+  matcher: [
+    '/((?!api|_next/static|_next/image|image|assets|favicon.ico|sw.js).*)'
+  ]
 };
 
 const cookieName = 'i18next';
+const PUBLIC_FILE = /\.(.*)$/;
 
 export function middleware(req: NextRequest) {
   let locale;
+  const { pathname } = req.nextUrl;
+
+  if (
+    pathname.startsWith('/_next') ||
+    pathname.startsWith('/api') ||
+    pathname.startsWith('/static') ||
+    PUBLIC_FILE.test(pathname)
+  )
+    return NextResponse.next();
+    
   if (req.cookies.has(cookieName))
     locale = acceptLanguage.get(req.cookies.get(cookieName)?.value);
   if (!locale) locale = acceptLanguage.get(req.headers.get('Accept-Language'));

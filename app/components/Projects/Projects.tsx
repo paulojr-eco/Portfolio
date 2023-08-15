@@ -20,9 +20,10 @@ const Projects: React.FC<ProjectsProps> = ({ locale }) => {
         <div className="px-6 py-4 w-44 border border-solid title text-center">
           {t('Projects')}
         </div>
-        <div className="flex flex-row w-full relative">
-          <div className='absolute left-6 md:left-80 top-0 w-[4px] h-full bg-white origin-top'/>
-          <ItemProject project={projects[0]} t={t}/>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-14'>
+          {projects.map((project) => (
+            <ItemProject key={project.title} project={project} t={t} />
+          ))}
         </div>
       </div>
     </div>

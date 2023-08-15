@@ -1,11 +1,12 @@
 'use client';
 
-import AboutMe from '@/components/AboutMe/AboutMe';
-import NavBar from '@/components/NavBar';
-import Projects from '@/components/Projects/Projects';
-import ScrollDownIcon from '@/components/ScrollDownIcon/ScrollDownIcon';
-import ShapeWaves from '@/components/ShapeWaves/ShapeWaves';
-import { TitleContent } from '@/components/TitleContent/client';
+import AboutMe from '@/app/components/AboutMe/AboutMe';
+import NavBar from '@/app/components/NavBar/NavBar';
+import Projects from '@/app/components/Projects/Projects';
+import ScrollDownIcon from '@/app/components/ScrollDownIcon/ScrollDownIcon';
+import ShapeWaves from '@/app/components/ShapeWaves/ShapeWaves';
+import { TitleContent } from '@/app/components/TitleContent/client';
+import Footer from '../components/Footer/Footer';
 
 export default function Home({
   params: { locale }
@@ -22,6 +23,7 @@ export default function Home({
       <ScrollDownIcon />
       <AboutMe locale={locale}/>
       <Projects locale={locale}/>
+      <Footer locale={locale}/>
     </main>
   );
 }

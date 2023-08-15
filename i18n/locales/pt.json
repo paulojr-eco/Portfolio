@@ -2,7 +2,7 @@
   "Performing the change on each line of code": "Realizando a mudança em cada linha de código",
   "Making dreams come true through digital solutions": "Tornando sonhos realidade por meio de soluções digitais",
   "Turning User Experience into Mesmerizing Symphonies": "Transformando a experiência do usuário em sinfonias hipnotizantes",
-  "Translating imagination into pixels, and pixels into extraordinary experiences": "Traduzindo imaginação em pixels, e pixels em experiências extraordinárias",
+  "Translating imagination into pixels, and pixels into extraordinary experiences": "Traduzindo imaginação em pixels, e pixels em experiências memoráveis",
   "About Me": "Sobre Mim",
   "About Me Text": "Sou um desenvolvedor Full Stack com foco no ecossistema JavaScript. Minhas linguagens de programação favoritas são TypeScript e JavaScript, nas quais tenho criado aplicações que solucionam problemas reais de maneira eficaz. Tenho uma mente inovadora e versátil. Estou sempre empolgado para enfrentar novos desafios e me dedicar completamente a eles. Minha busca constante é pela máxima organização em meus projetos. Utilizo abordagens empreendedoras, entusiasmo e avaliações construtivas, guiando-me por métricas estratégicas para orientar meu progresso.",
   "View CV": "Visualizar CV",
@@ -10,5 +10,13 @@
   "School Management System": "Sistema de Gerenciamento Escolar",
   "School Management System Description": "Esse app possibilita o gerencimento dos dados de alunos e funcionários de uma escola. As festures disponibilizadas são baseadas nas operações CRUD de alunos e funcionários.",
   "Technologies Used": "Tecnologias Utilizadas",
-  "Visit": "Visite"
+  "Visit": "Visite",
+  "Clean Node API": "Clean Node API",
+  "Clean Node API Description": "API construída por meio de um servidor NodeJS baseada nos conceitos de TDD (Test Driven Development) e SOLID.",
+  "Task Mate": "Task Mate",
+  "Task Mate Description": "Consiste em um sistema estilo To Do List no qual podem ser manuseadas tarefas a serem concluídas. Além disso são disponibilizados filtros sobre tais tarefas.",
+  "Vakinha Burger": "Vakinha Burger",
+  "Vakinha Burger Description": "Aplicativo de administração e gerenciamento da hamburgeria Vakinha Burger feito através da framework Flutter para web durante o evento DW10. O sistema foi construído com base em Futter Modular e MobX.",
+  "Footer First": "Criado com ",
+  "Footer Last": " por Paulo Paiva"
 }
