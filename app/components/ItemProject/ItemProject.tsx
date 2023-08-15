@@ -18,7 +18,7 @@ const ItemProject: React.FC<ItemProjectProps> = ({ project, t }) => {
     target: targetRef,
     offset: ['end end', 'start end']
   });
-  const scale = useTransform(scrollYProgress, [0, 0.5], [1, 0.5]);
+  const scale = useTransform(scrollYProgress, [0, 0.4], [1, 0.5]);
   return (
     <motion.div
       ref={targetRef}

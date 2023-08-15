@@ -16,7 +16,7 @@ const Projects: React.FC<ProjectsProps> = ({ locale }) => {
   const { t } = useTranslation(locale, 'projects');
   return (
     <div className={poppins.className}>
-      <div className="flex flex-col pt-[40vh] items-center mb-[40vh] gap-y-12">
+      <div className="flex flex-col pt-[40vh] items-center mb-[20vh] gap-y-12">
         <div className="px-6 py-4 w-44 border border-solid title text-center">
           {t('Projects')}
         </div>
