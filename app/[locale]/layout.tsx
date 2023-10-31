@@ -3,7 +3,6 @@ import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
 import { dir } from 'i18next';
 import { languages } from '@/i18n/settings';
-import Head from 'next/head';
 
 const poppins = Poppins({ weight: ['300'], subsets: ['latin'] });
 

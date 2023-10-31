@@ -12,8 +12,8 @@ const config: Config = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        wave: 'url("../public/wave.png")',
-        wave1: 'url("../public/wave1.png")'
+        wave: 'url("../public/images/wave.png")',
+        wave1: 'url("../public/images/wave1.png")'
       },
       scale: {
         '-100': '-1'
