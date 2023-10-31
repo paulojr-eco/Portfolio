@@ -11,6 +11,9 @@ const config: Config = {
       fontFamily: {
         sans: ['var(--font-digofa)']
       },
+      colors: {
+        'purple': '#8337E1',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
