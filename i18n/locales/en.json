@@ -18,5 +18,10 @@
   "Vakinha Burger": "Vakinha Burger",
   "Vakinha Burger Description": "Vakinha Burger hamburger administration and management application made using the Flutter framework for the web during the DW10 event. The system was built based on Futter Modular and MobX.",
   "Footer First": "Created with ",
-  "Footer Last": " by Paulo Paiva"
+  "Footer Last": " by Paulo Paiva",
+  "HOME": "HOME",
+  "PROJECTS": "PROJECTS",
+  "ABOUT ME": "ABOUT ME",
+  "CONTACTS": "CONTACTS",
+  "Hey There! I'm Paulo Paiva": "Hey There! I'm Paulo Paiva"
 }

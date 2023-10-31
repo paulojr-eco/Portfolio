@@ -8,7 +8,7 @@ interface TitleContentBaseProps {
 const TitleContentBase: React.FC<TitleContentBaseProps> = ({ t }) => {
   return (
     <div className="md:pl-[10vw] flex flex-col gap-y-6">
-      <p className="text-6xl font-bold"> {"Hey There! I'm Paulo Paiva"} </p>
+      <p className="text-6xl font-bold"> {t("Hey There! I'm Paulo Paiva")} </p>
     </div>
   );
 };

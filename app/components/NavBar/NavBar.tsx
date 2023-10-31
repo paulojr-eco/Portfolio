@@ -7,6 +7,7 @@ import { usePathname } from 'next/navigation';
 import navBarData from './navbar-options.json';
 import SelectLanguageMenu from '../SelectLanguageMenu/SelectLanguageMenu';
 import path from 'path';
+import { useTranslation } from '@/i18n/client';
 
 interface NavBarProps {
   locale: string;
@@ -18,6 +19,7 @@ interface NavBarOption {
 }
 
 const NavBar: React.FC<NavBarProps> = ({ locale }) => {
+  const { t } = useTranslation(locale, 'navbar');
   const navBarOptions: NavBarOption[] = navBarData;
   const pathname = usePathname();
   const currentUrl =
@@ -41,7 +43,7 @@ const NavBar: React.FC<NavBarProps> = ({ locale }) => {
               currentUrl === menuOption.url && 'underline underline-offset-8 decoration-purple decoration-[3px]'
             }`}
           >
-            {menuOption.title}
+            {t(menuOption.title)}
           </Link>
         ))}
       </div>

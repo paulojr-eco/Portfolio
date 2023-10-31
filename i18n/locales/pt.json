@@ -18,5 +18,10 @@
   "Vakinha Burger": "Vakinha Burger",
   "Vakinha Burger Description": "Aplicativo de administração e gerenciamento da hamburgeria Vakinha Burger feito através da framework Flutter para web durante o evento DW10. O sistema foi construído com base em Futter Modular e MobX.",
   "Footer First": "Criado com ",
-  "Footer Last": " por Paulo Paiva"
+  "Footer Last": " por Paulo Paiva",
+  "HOME": "PÁGINA INICIAL",
+  "PROJECTS": "PROJETOS",
+  "ABOUT ME": "SOBRE MIM",
+  "CONTACTS": "CONTATOS",
+  "Hey There! I'm Paulo Paiva": "Olá! Me chamo Paulo Paiva"
 }
