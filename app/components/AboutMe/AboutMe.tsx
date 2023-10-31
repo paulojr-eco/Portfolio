@@ -1,5 +1,3 @@
-'use client';
-
 import { useTranslation } from '@/i18n/client';
 import './styles.css';
 import { Poppins } from 'next/font/google';

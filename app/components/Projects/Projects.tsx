@@ -1,4 +1,4 @@
-'use client';
+
 
 import { useTranslation } from '@/i18n/client';
 import { Poppins } from 'next/font/google';

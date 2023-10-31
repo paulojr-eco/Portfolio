@@ -1,10 +1,22 @@
 import '../globals.css';
 import type { Metadata } from 'next';
-import { Poppins } from 'next/font/google';
+import localFont from '@next/font/local';
 import { dir } from 'i18next';
 import { languages } from '@/i18n/settings';
 
-const poppins = Poppins({ weight: ['300'], subsets: ['latin'] });
+const digofa = localFont({
+  src: [
+    {
+      path: '../../public/fonts/DigofaRegular.ttf',
+      weight: '400'
+    },
+    {
+      path: '../../public/fonts/DigofaBold.ttf',
+      weight: '700'
+    }
+  ],
+  variable: '--font-digofa'
+});
 
 export const metadata: Metadata = {
   title: 'Paulo Paiva Portfolio',
@@ -25,15 +37,33 @@ export default function RootLayout({
   return (
     <html lang={locale} dir={dir(locale)}>
       <head>
-        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png"/>
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png"/>
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png"/>
-        <link rel="manifest" href="/favicon/site.webmanifest"/>
-        <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5"/>
-        <meta name="msapplication-TileColor" content="#da532c"/>
-        <meta name="theme-color" content="#ffffff"/>
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/favicon/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/favicon/site.webmanifest" />
+        <link
+          rel="mask-icon"
+          href="/favicon/safari-pinned-tab.svg"
+          color="#5bbad5"
+        />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
       </head>
-      <body className={poppins.className}>{children}</body>
+      <body className={`${digofa.variable} font-sans`}>{children}</body>
     </html>
   );
 }
