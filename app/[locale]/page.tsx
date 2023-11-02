@@ -5,5 +5,9 @@ export default function Home({
 }: {
   params: { locale: string };
 }) {
-  return <TitleContent locale={locale} />;
+  return (
+    <div className='flex flex-1'>
+      <TitleContent locale={locale} />
+    </div>
+  );
 }

@@ -1,0 +1,29 @@
+.stroke-text {
+  -webkit-text-fill-color: #15143e;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+}
+
+.bounce {
+  animation-name: bounce;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  65% {
+    transform: translateY(-30px);
+  }
+  80% {
+    transform: translateY(0px);
+  }
+  88% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

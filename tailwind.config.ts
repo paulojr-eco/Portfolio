@@ -9,7 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-digofa)']
+        sans: ['var(--font-digofa)'],
+        octosquares: ['var(--font-octosquares)']
       },
       colors: {
         'purple': '#8337E1',

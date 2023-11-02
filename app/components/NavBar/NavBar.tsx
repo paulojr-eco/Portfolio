@@ -6,7 +6,6 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import navBarData from './navbar-options.json';
 import SelectLanguageMenu from '../SelectLanguageMenu/SelectLanguageMenu';
-import path from 'path';
 import { useTranslation } from '@/i18n/client';
 
 interface NavBarProps {

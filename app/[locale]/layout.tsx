@@ -19,6 +19,16 @@ const digofa = localFont({
   variable: '--font-digofa'
 });
 
+const octosquares = localFont({
+  src: [
+    {
+      path: '../../public/fonts/TTOctosquaresLight.ttf',
+      weight: '300'
+    }
+  ],
+  variable: '--font-octosquares'
+});
+
 export const metadata: Metadata = {
   title: 'Paulo Paiva Portfolio',
   description: 'Come know more about me!'
@@ -35,6 +45,18 @@ export default function RootLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
+  const stars = Array.from({ length: 150 }, (_, index) => (
+    <div
+      key={index}
+      style={
+        {
+          '--speed': Math.random() * 10 + 10,
+          '--size': (Math.random() * 20 + 5).toString() + 'px'
+        } as React.CSSProperties
+      }
+    ></div>
+  ));
+
   return (
     <html lang={locale} dir={dir(locale)}>
       <head>
@@ -64,12 +86,14 @@ export default function RootLayout({
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </head>
-      <body className={`${digofa.variable} font-sans`}>
-        
-        <main className="flex flex-col overflow-x-hidden">
-          <div className="flex flex-col p-8 gap-y-28">
-            <NavBar locale={locale} />
-            {children}
+      <body className={`${digofa.variable} font-sans ${octosquares.variable}`}>
+        <main>
+          <div className="flex h-screen w-full relative overflow-hidden">
+            <div className="stars flex flex-col absolute z-0">{stars}</div>
+            <div className="flex flex-col p-8 h-screen w-full z-50">
+              <NavBar locale={locale} />
+              {children}
+            </div>
           </div>
         </main>
       </body>

@@ -11,17 +11,48 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background: 21, 20, 62;
   }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
+  background: rgb(14, 15, 75);
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    45deg,
+    rgba(14, 15, 75, 1) 0%,
+    rgba(54, 25, 102, 1) 100%
+  );
+}
+
+.stars div {
+  position: relative;
+  width: var(--size);
+  height: var(--size);
+  background: #ffffff;
+  margin: 0 4px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #393869, 0 0 50px #ffffff, 0 0 100px #ffffff;
+  animation: galaxy 15s linear infinite;
+  animation-duration: calc(120s / var(--speed));
+}
+
+.stars div:nth-child(even) {
+  background: #818DFF;
+  box-shadow: 0 0 0 10px #492D78, 0 0 50px #ffffff, 0 0 100px #ffffff;
+}
+
+@keyframes galaxy {
+  0% {
+    transform: translateY(-100vh) translateX(110vw) scale(1);
+  }
+  100% {
+    transform: translateY(0vh) translateX(0vw) scale(0);
+  }
 }
