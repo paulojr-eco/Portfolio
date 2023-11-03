@@ -13,7 +13,9 @@ const config: Config = {
         octosquares: ['var(--font-octosquares)']
       },
       colors: {
-        'purple': '#8337E1',
+        purple: '#8337E1',
+        background:
+          'linear-gradient(45deg, rgba(14, 15, 75, 1) 0%, rgba(54, 25, 102, 1) 100%)'
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -52,12 +54,12 @@ const config: Config = {
           }
         },
         blink: {
-          "50%": {
-            backgroundColor: "transparent"
+          '50%': {
+            backgroundColor: 'transparent'
           },
-          "100%": {
-            backgroundColor: "teal-500"
-          }  
+          '100%': {
+            backgroundColor: 'teal-500'
+          }
         }
       },
       animation: {
