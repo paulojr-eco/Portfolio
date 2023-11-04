@@ -29,6 +29,8 @@ body {
   color: rgb(var(--foreground-rgb));
   background: rgb(14, 15, 75);
   background: var(--background);
+  scroll-behavior: smooth;
+  cursor: none;
 }
 
 .stars div {
@@ -55,4 +57,39 @@ body {
   100% {
     transform: translateY(0vh) translateX(0vw) scale(0);
   }
+}
+
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  mix-blend-mode: hard-light;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 999 !important;
+  background-color: #70BDDD;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .flare {
+    display: none;
+    width: 0;
+    height: 0;
+    transition: width 0.2s ease-in-out, height 0.2s ease-in-out,
+      opacity 0.2s ease-in-out;
+  }
+}
+
+.cursor.progress {
+  display: none;
+  opacity: 0 !important;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out,
+    opacity 0.2s ease-in-out;
 }

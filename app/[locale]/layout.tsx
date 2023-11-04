@@ -4,6 +4,7 @@ import localFont from '@next/font/local';
 import { dir } from 'i18next';
 import { languages } from '@/i18n/settings';
 import NavBar from '../components/NavBar/NavBar';
+import CustomCursor from '../components/CustomCursor/CustomCursor';
 
 const digofa = localFont({
   src: [
@@ -88,6 +89,7 @@ export default function RootLayout({
       </head>
       <body className={`${digofa.variable} font-sans ${octosquares.variable}`}>
         <main>
+          <CustomCursor />
           <div className="flex h-screen w-full relative overflow-hidden">
             <div className="stars flex flex-col absolute z-0">{stars}</div>
             <div className="flex flex-col p-8 h-screen w-full z-50">

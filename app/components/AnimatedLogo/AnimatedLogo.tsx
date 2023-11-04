@@ -15,7 +15,7 @@ const AnimatedLogo = ({ t }: AnimatedLogoProps) => {
   ));
 
   return (
-    <div className="fixed h-screen w-screen top-0 left-0 flex flex-col items-center justify-between bg-gradient-to-tr from-[#0E0F4B] to-[#361966] gap-y-6 cursor-progress">
+    <div className="fixed h-screen w-screen top-0 left-0 flex flex-col items-center justify-between bg-gradient-to-tr from-[#0E0F4B] to-[#361966] gap-y-6 cursor-progress z-[999]">
       <div className="flex flex-col w-full">
         <Marquee className="text-4xl py-4 font-bold stroke-text">
           <div className="flex gap-x-24">{loadingArray}</div>
