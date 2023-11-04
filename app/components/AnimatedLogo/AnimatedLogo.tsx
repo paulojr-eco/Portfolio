@@ -27,7 +27,7 @@ const AnimatedLogo = ({ t }: AnimatedLogoProps) => {
         height={100}
         width={100}
         alt="animated logo"
-        className="w-[200px]"
+        className="w-[100px] xl:w-[200px]"
       />
       <div className="flex flex-col w-full">
         <hr />

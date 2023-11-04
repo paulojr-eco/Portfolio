@@ -1,8 +1,8 @@
-import React, { Suspense, useEffect, useRef } from 'react';
+import React, { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { useProgress } from '@react-three/drei';
 import Rocket from '../Rocket/Rocket';
-import { motion, useInView } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { TFunction } from 'i18next';
 import { name } from './name-data';
 import AnimatedLogo from '../AnimatedLogo/AnimatedLogo';
@@ -30,7 +30,7 @@ const TitleContentBase: React.FC<TitleContentBaseProps> = ({ t }) => {
               <span className="text-4xl xl:text-6xl font-bold">
                 {t("Hey There! I'm")}&nbsp;
               </span>
-              <div className='flex'>
+              <div className="flex">
                 {name.letters.map((letter) => (
                   <span
                     key={letter.key}
@@ -54,12 +54,18 @@ const TitleContentBase: React.FC<TitleContentBaseProps> = ({ t }) => {
               transition={{ ease: 'easeInOut', duration: 1.5 }}
             >
               <p className="text-xl xl:text-2xl"> {t('front page - intro')} </p>
-              <p className="text-xl xl:text-2xl"> {t('front page - about me')} </p>
-              <p className="text-xl xl:text-2xl"> {t('front page - invite')} </p>
+              <p className="text-xl xl:text-2xl">
+                {' '}
+                {t('front page - about me')}{' '}
+              </p>
+              <p className="text-xl xl:text-2xl">
+                {' '}
+                {t('front page - invite')}{' '}
+              </p>
             </motion.div>
           </div>
           <motion.div
-            className="w-[350px] xl:w-[500px] h-[350px] xl:h-[500px]"
+            className="w-[350px] xl:w-[500px] h-[350px] xl:h-[500px] overflow-hidden"
             initial={{ opacity: 0, x: 200 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ ease: 'easeInOut', duration: 1.5 }}
