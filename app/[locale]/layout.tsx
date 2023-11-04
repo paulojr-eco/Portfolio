@@ -92,7 +92,7 @@ export default function RootLayout({
           <CustomCursor />
           <div className="flex h-screen w-full relative overflow-hidden">
             <div className="stars flex flex-col absolute z-0">{stars}</div>
-            <div className="flex flex-col p-8 h-screen w-full z-50">
+            <div className="flex flex-col px-[2vw] pt-[2vw] 3xl:p-24 h-screen w-full z-50">
               <NavBar locale={locale} />
               {children}
             </div>

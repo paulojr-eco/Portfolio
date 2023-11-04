@@ -36,7 +36,7 @@ const SelectLanguageMenu: React.FC<SelectLanguageMenuProps> = ({ locale }) => {
   }, []);
 
   return (
-    <div className="flex flex-col gap-y-2 right-8 absolute">
+    <div className="flex flex-col gap-y-1 relative">
       <div
         ref={menuRef}
         className="flex flex-row my-auto gap-x-4 border px-4 py-2 text-sm cursor-pointer"
@@ -47,7 +47,7 @@ const SelectLanguageMenu: React.FC<SelectLanguageMenuProps> = ({ locale }) => {
       </div>
 
       {open && (
-        <div ref={containerRef}>
+        <div ref={containerRef} className="w-full top-11 xl:absolute">
           <OptionsLanguagesMenu />
         </div>
       )}
