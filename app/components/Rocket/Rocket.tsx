@@ -11,16 +11,16 @@ const Rocket = ({ progress }: RocketProps) => {
   const { actions } = useAnimations(model.animations, modelRef);
   const controlsRef = useRef<any>();
   useEffect(() => {
-    actions['KeyAction']?.play();
+    actions['turbine-flame']?.play();
   }, [progress, actions]);
 
   return (
     <>
       <OrbitControls ref={controlsRef} />
-      <directionalLight position={[0, 1, 3]} intensity={2} />
-      <directionalLight position={[0, 1, -3]} />
+      <directionalLight position={[2, 1, 3]} intensity={2} />
+      <directionalLight position={[2, 1, -3]} />
       <ambientLight />
-      <mesh position={[0, 0, 0]} rotation={[0, 0, (3 / 2) * Math.PI]}>
+      <mesh position={[0, 0, 0]} rotation={[0.1, 0.1, (3 / 2) * Math.PI + 0.1]}>
         <primitive object={model.scene} ref={modelRef} />
       </mesh>
     </>
