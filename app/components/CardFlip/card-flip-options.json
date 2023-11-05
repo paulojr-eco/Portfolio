@@ -1,16 +1,26 @@
-[{
-  "name": "Clean Node API",
-  "themeColor": "bg-green-card"
-},
-{
-  "name": "Code Pix",
-  "themeColor": "bg-blue-card"
-},
-{
-  "name": "Sistema Escolar",
-  "themeColor": "bg-purple-card"
-},
-{
-  "name": "Task Mate",
-  "themeColor": "bg-orange-card"
-}]
+[
+  {
+    "name": "Clean Node API",
+    "themeColor": "bg-green-card",
+    "link": "/clean-node-api",
+    "id": 1
+  },
+  {
+    "name": "Code Pix",
+    "themeColor": "bg-blue-card",
+    "link": "/code-pix",
+    "id": 2
+  },
+  {
+    "name": "School System",
+    "themeColor": "bg-purple-card",
+    "link": "/school-system",
+    "id": 3
+  },
+  {
+    "name": "Task Mate",
+    "themeColor": "bg-orange-card",
+    "link": "/task-mate",
+    "id": 4
+  }
+]

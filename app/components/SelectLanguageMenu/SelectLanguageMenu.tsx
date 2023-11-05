@@ -47,7 +47,7 @@ const SelectLanguageMenu: React.FC<SelectLanguageMenuProps> = ({ locale }) => {
       </div>
 
       {open && (
-        <div ref={containerRef} className="w-full top-11 xl:absolute">
+        <div ref={containerRef} className="w-full top-11 md:absolute">
           <OptionsLanguagesMenu />
         </div>
       )}

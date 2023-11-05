@@ -90,12 +90,8 @@ export default function RootLayout({
       <body className={`${digofa.variable} font-sans ${octosquares.variable}`}>
         <main>
           <CustomCursor />
-          <div className="flex h-screen w-screen relative overflow-hidden">
-            <div className="stars flex flex-col absolute z-10">{stars}</div>
-            <div className="flex flex-col px-[2vw] pt-[2vw] 3xl:p-24 h-screen w-screen z-20">
-              <NavBar locale={locale} />
-              {children}
-            </div>
+          <div className="flex xl:h-screen w-screen relative overflow-hidden">
+            {children}
           </div>
         </main>
       </body>

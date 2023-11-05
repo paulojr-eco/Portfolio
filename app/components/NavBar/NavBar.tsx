@@ -24,7 +24,6 @@ const NavBar: React.FC<NavBarProps> = ({ locale }) => {
   const pathname = usePathname();
   const currentUrl =
     pathname === '/' + locale ? '/' : pathname.replace('/' + locale, '');
-  const [isOpen, setIsOpen] = useState(false);
   const [screenWidth, setScreenWidth] = useState<number>(0);
   const handleResize = () => {
     setScreenWidth(window.innerWidth);
@@ -39,7 +38,7 @@ const NavBar: React.FC<NavBarProps> = ({ locale }) => {
   }, []);
   return (
     <div className="flex place-content-between">
-      <Link href={'/'}>
+      <Link href={`/${locale}`} className='z-[999999]'>
         <Image
           src={'/images/logo.png'}
           alt="website logo"
@@ -54,7 +53,7 @@ const NavBar: React.FC<NavBarProps> = ({ locale }) => {
           {navBarOptions.map((menuOption) => (
             <Link
               key={menuOption.title}
-              href={menuOption.url}
+              href={`/${locale}/${menuOption.url}`}
               className={`self-center ${
                 currentUrl === menuOption.url &&
                 'underline underline-offset-8 decoration-purple decoration-[3px]'
