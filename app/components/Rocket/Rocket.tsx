@@ -6,7 +6,7 @@ interface RocketProps {
 }
 
 const Rocket = ({ progress }: RocketProps) => {
-  const model = useGLTF('./models/rocket.gltf');
+  const model = useGLTF('/models/rocket.gltf');
   const modelRef = useRef();
   const { actions } = useAnimations(model.animations, modelRef);
   const controlsRef = useRef<any>();
@@ -27,6 +27,6 @@ const Rocket = ({ progress }: RocketProps) => {
   );
 };
 
-useGLTF.preload('./models/rocket.gltf');
+useGLTF.preload('/models/rocket.gltf');
 
 export default Rocket;

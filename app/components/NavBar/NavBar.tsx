@@ -4,12 +4,10 @@ import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu } from 'lucide-react';
 import navBarData from './navbar-options.json';
 import SelectLanguageMenu from '../SelectLanguageMenu/SelectLanguageMenu';
 import { useTranslation } from '@/i18n/client';
 import MobileNavBar from './MobileNavBar';
-import { MenuToggle } from './MenuToggle';
 
 interface NavBarProps {
   locale: string;

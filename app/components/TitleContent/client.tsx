@@ -1,9 +1,8 @@
 'use client';
 
+import factoryUseTranslation from '@/app/hooks/factoryUseTranslations';
 import TitleContentBase from './TitleContentBase';
-import { useTranslation } from '@/i18n/client';
 
-export const TitleContent = ({ locale }: {locale: string}) => {
-  const { t } = useTranslation(locale, 'titleContent');
-  return <TitleContentBase t={t}/>;
+export const TitleContent = ({ locale }: { locale: string }) => {
+  return <TitleContentBase t={factoryUseTranslation(locale)} />;
 };

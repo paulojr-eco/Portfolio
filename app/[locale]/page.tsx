@@ -6,7 +6,7 @@ export default function Home({
   params: { locale: string };
 }) {
   return (
-    <div className='flex flex-1'>
+    <div className="flex flex-1">
       <TitleContent locale={locale} />
     </div>
   );

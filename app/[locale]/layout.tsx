@@ -46,7 +46,7 @@ export default function RootLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
-  const stars = Array.from({ length: 150 }, (_, index) => (
+  const stars = Array.from({ length: 130 }, (_, index) => (
     <div
       key={index}
       style={
@@ -90,9 +90,9 @@ export default function RootLayout({
       <body className={`${digofa.variable} font-sans ${octosquares.variable}`}>
         <main>
           <CustomCursor />
-          <div className="flex h-screen w-full relative overflow-hidden">
-            <div className="stars flex flex-col absolute z-0">{stars}</div>
-            <div className="flex flex-col px-[2vw] pt-[2vw] 3xl:p-24 h-screen w-full z-50">
+          <div className="flex h-screen w-screen relative overflow-hidden">
+            <div className="stars flex flex-col absolute z-10">{stars}</div>
+            <div className="flex flex-col px-[2vw] pt-[2vw] 3xl:p-24 h-screen w-screen z-20">
               <NavBar locale={locale} />
               {children}
             </div>

@@ -14,6 +14,14 @@ const config: Config = {
       },
       colors: {
         purple: '#8337E1',
+        lightGreen: '#2AA434',
+        darkGreen: '#024708',
+        lightBlue: '#007DD8',
+        darkBlue: '#00154D',
+        lightPurple: '#8600D8',
+        darkPurple: '#39004D',
+        lightOrange: '#FFB800',
+        darkOrange: '#E95400',
         background:
           'linear-gradient(45deg, rgba(14, 15, 75, 1) 0%, rgba(54, 25, 102, 1) 100%)'
       },
@@ -22,7 +30,15 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         wave: 'url("../public/images/wave.png")',
-        wave1: 'url("../public/images/wave1.png")'
+        wave1: 'url("../public/images/wave1.png")',
+        'green-card':
+          "url('../public/images/clean-node-api/node-bg.png'), linear-gradient(to bottom, rgba(42, 164, 52, 1), rgba(2, 71, 8, 1))",
+        'blue-card':
+          "url('../public/images/code-pix/codepix-bg.png'), linear-gradient(to bottom, rgba(0, 125, 256, 1), rgba(0, 21, 77, 1))",
+        'purple-card':
+          "url('../public/images/school-management-system/school-system-bg.png'), linear-gradient(to bottom, rgba(134, 0, 216, 1), rgba(57, 0, 77, 1))",
+        'orange-card':
+          "url('../public/images/task-mate/task-mate-bg.png'), linear-gradient(to bottom, rgba(255, 184, 0, 1), rgba(233, 84, 0, 1))"
       },
       scale: {
         '-100': '-1'
