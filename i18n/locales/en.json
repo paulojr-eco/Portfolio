@@ -3,7 +3,7 @@
   "Making dreams come true through digital solutions": "Making dreams come true through digital solutions",
   "Turning User Experience into Mesmerizing Symphonies": "Turning User Experience into Mesmerizing Symphonies",
   "Translating imagination into pixels, and pixels into extraordinary experiences": "Converting imagination into pixels, and pixels into catchy experiences",
-  "About Me": "About Me",
+  "ABOUT ME": "ABOUT ME",
   "About Me Text": "I'm a Full-Stack developer focused on the JavaScript ecosystem. My favorite programming languages are TypeScript and JavaScript, in which I have been creating applications that effectively solve real problems. \nI have an innovative and multifaceted mind. I am always excited to face new challenges and dedicate myself completely to them. \nMy constant search is for maximum organization in my projects. I use entrepreneurial approaches, enthusiasm and constructive estimation, guided by strategic metrics to guide my progress.",
   "View CV": "View CV",
   "Projects": "Projects",
@@ -23,7 +23,7 @@
   "Footer Last": " by Paulo Paiva",
   "HOME": "HOME",
   "PROJECTS": "PROJECTS",
-  "ABOUT ME": "ABOUT ME",
+  "about me": "ABOUT ME",
   "CONTACTS": "CONTACTS",
   "Hey There! I'm": "Hey There! I'm",
   "front page - intro": "a Full-Stack developer who makes dreams come true through digital solutions.",
@@ -33,5 +33,10 @@
   "about this project": "About this project:",
   "used technologies": "Used Technologies:",
   "links to visite": "Links to Visite:",
-  "link to certificate": "Link to Course Certificate Related:"
+  "link to certificate": "Link to Course Certificate Related:",
+  "full name": "Full Name: Paulo Junior Carvalho de Paiva",
+  "age": "Age: 23 years old",
+  "education level": "Education Level: Bachelor's degree in Computer Engineering from the Federal University of Itajubá",
+  "location": "Location: Itajubá - Brazil 🇧🇷",
+  "resume": "Resume"
 }

@@ -3,7 +3,7 @@
   "Making dreams come true through digital solutions": "Tornando sonhos realidade por meio de soluções digitais",
   "Turning User Experience into Mesmerizing Symphonies": "Transformando a experiência do usuário em sinfonias hipnotizantes",
   "Translating imagination into pixels, and pixels into extraordinary experiences": "Traduzindo imaginação em pixels, e pixels em experiências memoráveis",
-  "About Me": "Sobre Mim",
+  "about me": "SOBRE MIM",
   "About Me Text": "Sou um desenvolvedor Full-Stack com foco no ecossistema JavaScript. Minhas linguagens de programação favoritas são TypeScript e JavaScript, nas quais tenho criado aplicações que solucionam problemas reais de maneira eficaz. \nTenho uma mente inovadora e versátil. Estou sempre empolgado para enfrentar novos desafios e me dedicar completamente a eles. \nMinha busca constante é pela máxima organização em meus projetos. Utilizo abordagens empreendedoras, entusiasmo e avaliações construtivas, guiando-me por métricas estratégicas para orientar meu progresso.",
   "View CV": "Visualizar CV",
   "Projects": "Projetos",
@@ -33,5 +33,10 @@
   "about this project": "Sobre esse projeto:",
   "used technologies": "Tecnologias Utilizadas:",
   "links to visite": "Links para Visitar:",
-  "link to certificate": "Link para o Curso Relacionado:"
+  "link to certificate": "Link para o Curso Relacionado:",
+  "full name": "Nome Completo: Paulo Junior Carvalho de Paiva",
+  "age": "Idade: 23 anos",
+  "education level": "Educação: Bacharelado em Engenharia de Computação pela Universidade Federal de Itajubá",
+  "location": "Localização: Itajubá - Brazil 🇧🇷",
+  "resume": "Currículo"
 }
