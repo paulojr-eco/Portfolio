@@ -77,6 +77,9 @@ dependencies:
   styled-components:
     specifier: ^6.0.7
     version: 6.1.0(react-dom@18.2.0)(react@18.2.0)
+  swiper:
+    specifier: ^11.0.3
+    version: 11.0.3
   tailwindcss:
     specifier: 3.3.3
     version: 3.3.3
@@ -3278,6 +3281,11 @@ packages:
       react: '>=17.0'
     dependencies:
       react: 18.2.0
+    dev: false
+
+  /swiper@11.0.3:
+    resolution: {integrity: sha512-MyV9ooQsriAe2EibeamqewLjgCfSvl2xoyratl6S3ln5BXDL4BzlO6mxcbLMCzQL6Z60b/u0AS/nKrepL0+TAg==}
+    engines: {node: '>= 4.7.0'}
     dev: false
 
   /tailwindcss@3.3.3:

@@ -1,24 +1,24 @@
 [
   {
-    "name": "Clean Node API",
+    "name": "clean node api",
     "themeColor": "bg-green-card",
     "link": "/clean-node-api",
     "id": 1
   },
   {
-    "name": "Code Pix",
+    "name": "vakinha burger",
     "themeColor": "bg-blue-card",
-    "link": "/code-pix",
+    "link": "/vakinha-burger",
     "id": 2
   },
   {
-    "name": "School System",
+    "name": "school system",
     "themeColor": "bg-purple-card",
     "link": "/school-system",
     "id": 3
   },
   {
-    "name": "Task Mate",
+    "name": "task mate",
     "themeColor": "bg-orange-card",
     "link": "/task-mate",
     "id": 4

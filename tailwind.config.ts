@@ -26,11 +26,6 @@ const config: Config = {
           'linear-gradient(45deg, rgba(14, 15, 75, 1) 0%, rgba(54, 25, 102, 1) 100%)'
       },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        wave: 'url("../public/images/wave.png")',
-        wave1: 'url("../public/images/wave1.png")',
         'green-card':
           "url('../public/images/clean-node-api/node-bg.png'), linear-gradient(to bottom, rgba(42, 164, 52, 1), rgba(2, 71, 8, 1))",
         'blue-card':

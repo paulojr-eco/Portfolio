@@ -25,6 +25,10 @@ const octosquares = localFont({
     {
       path: '../../public/fonts/TTOctosquaresLight.ttf',
       weight: '300'
+    },
+    {
+      path: '../../public/fonts/TTOctosquaresBold.ttf',
+      weight: '700'
     }
   ],
   variable: '--font-octosquares'
@@ -90,9 +94,7 @@ export default function RootLayout({
       <body className={`${digofa.variable} font-sans ${octosquares.variable}`}>
         <main>
           <CustomCursor />
-          <div className="flex xl:h-screen w-screen relative overflow-hidden">
-            {children}
-          </div>
+          {children}
         </main>
       </body>
     </html>

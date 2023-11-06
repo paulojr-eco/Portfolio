@@ -18,11 +18,13 @@ export default function Home({
     ></div>
   ));
   return (
-    <div className="flex flex-col h-screen px-[2vw] pt-[2vw] w-screen z-20">
-      <NavBar locale={locale} />
-      <div className="stars flex flex-col absolute z-[-5]">{stars}</div>
-      <div className="flex flex-1">
-        <TitleContent locale={locale} />
+    <div className="flex xl:h-screen w-screen relative overflow-hidden">
+      <div className="flex flex-col h-screen px-[2vw] pt-[2vw] w-screen z-20">
+        <NavBar locale={locale} />
+        <div className="stars flex flex-col absolute z-[-5]">{stars}</div>
+        <div className="flex flex-1">
+          <TitleContent locale={locale} />
+        </div>
       </div>
     </div>
   );

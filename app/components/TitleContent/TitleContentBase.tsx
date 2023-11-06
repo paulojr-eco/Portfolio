@@ -55,13 +55,9 @@ const TitleContentBase: React.FC<TitleContentBaseProps> = ({ t }) => {
             >
               <p className="text-xl xl:text-2xl"> {t('front page - intro')} </p>
               <p className="text-xl xl:text-2xl">
-                {' '}
-                {t('front page - about me')}{' '}
+                {t('front page - about me')}
               </p>
-              <p className="text-xl xl:text-2xl">
-                {' '}
-                {t('front page - invite')}{' '}
-              </p>
+              <p className="text-xl xl:text-2xl">{t('front page - invite')}</p>
             </motion.div>
           </div>
           <motion.div
