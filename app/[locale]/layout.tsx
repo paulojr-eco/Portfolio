@@ -35,8 +35,9 @@ const octosquares = localFont({
 });
 
 export const metadata: Metadata = {
-  title: 'Paulo Paiva Portfolio',
-  description: 'Come know more about me!'
+  title: 'Paulo Paiva Portfólio',
+  description:
+    'Venha explorar meu portfólio de projetos em web development e entre em contato para colaborações emocionantes.'
 };
 
 export async function generateStaticParams() {
