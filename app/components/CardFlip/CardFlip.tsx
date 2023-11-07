@@ -31,7 +31,7 @@ const CardFlip = ({ name, themeColor, link, id, locale }: CardFlipProps) => {
       >
         <Link
           href={pathname + link}
-          className={`flex flex-col justify-center items-center rounded-3xl w-[170px] h-[300px] xl:w-[250px] xl:h-[400px] border-8 ${themeColor} -rotate-[20deg] bg-cover bg-center bg-no-repeat cursor-pointer`}
+          className={`flex flex-col ${themeColor} justify-center items-center rounded-3xl w-[170px] h-[300px] xl:w-[250px] xl:h-[400px] border-8 -rotate-[20deg] bg-cover bg-center bg-no-repeat cursor-pointer`}
         >
           <span className="text-xl xl:text-3xl px-8 text-center">
             {t(name)}

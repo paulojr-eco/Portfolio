@@ -13,10 +13,10 @@ const ContactsInfo = ({ t }: ContactsInfoProps) => {
       <span className="text-4xl xl:text-5xl font-bold py-4 px-6 border">
         {t('CONTACTS')}
       </span>
-      <div className="flex flex-col xl:flex-row gap-y-16 gap-x-16 items-center font-octosquares font-bold text-xl">
+      <div className="flex flex-col xl:flex-row gap-y-16 gap-x-16 items-center font-octosquares font-bold text-xl text-center">
         {t('wanna hire me')}
       </div>
-      <div className="flex">
+      <div className="flex flex-col xl:flex-row">
         {contactData.map((contact) => (
           <CubeAnimated
             key={contact.type}

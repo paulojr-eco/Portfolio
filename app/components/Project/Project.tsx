@@ -22,7 +22,7 @@ const Project = ({ projectName, t }: ProjectProps) => {
   const project = getProjectByTitle(projectName);
   return (
     <div className="flex flex-col flex-1 gap-y-16 xl:gap-y-[72px] pt-8 xl:pt-16 pb-16 mx-8 xl:mx-32">
-      <span className="text-4xl xl:text-5xl font-bold py-4 px-6 border mx-auto">
+      <span className="text-3xl xl:text-5xl font-bold py-4 px-6 border mx-auto text-center">
         {t(projectName)}
       </span>
       <div className="flex flex-col font-octosquares text-xl gap-y-4">
