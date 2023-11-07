@@ -9,42 +9,40 @@ interface CubeAnimatedProps {
   t: TFunction<string, undefined>;
   id: number;
   themeColor: string;
+  link: string;
+  image: string;
+  imageGradient: string;
+  alt: string;
 }
 
-const CubeAnimated = ({ type, t, id, themeColor }: CubeAnimatedProps) => {
+const CubeAnimated = ({
+  type,
+  t,
+  id,
+  themeColor,
+  link,
+  image,
+  imageGradient,
+  alt
+}: CubeAnimatedProps) => {
   return (
     <motion.div
       className="w-[200px] h-[200px] text-xl"
-      initial={{ opacity: 0, x: -400 * id }}
+      initial={{ opacity: 0, x: -300 * id }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ ease: 'easeInOut', duration: 1 }}
     >
-      <Link
-        href={
-          'https://drive.google.com/file/d/1_b2EojkZZTxnEOiwKps1SM0sGeyxYgke/view?usp=sharing'
-        }
-        target="_blank"
-        className="container"
-      >
+      <Link href={link} target="_blank" className="container">
         <div className="image-cube">
-          <div className={`front ${themeColor} flex flex-col justify-center items-center gap-y-6`}>
-            <Image
-              src={'/images/curriculum-vitae.png'}
-              alt="resume"
-              height={100}
-              width={100}
-              className="invert"
-            />
+          <div
+            className={`front ${themeColor} flex flex-col justify-center items-center gap-y-6`}
+          >
+            <Image src={image} alt={alt} height={100} width={100} />
             <span>{t(type)}</span>
           </div>
           <div className="bottom bg-white flex flex-col justify-center items-center gap-y-6">
-            <Image
-              src={'/images/curriculum-vitae-gradient.png'}
-              alt="resume"
-              height={100}
-              width={100}
-            />
-            <span className="bg-green-gradient text-transparent bg-clip-text">
+            <Image src={imageGradient} alt={alt} height={100} width={100} />
+            <span className={`${themeColor} text-transparent bg-clip-text`}>
               {t(type)}
             </span>
           </div>

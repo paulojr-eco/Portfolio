@@ -38,5 +38,9 @@
   "age": "Idade: 23 anos",
   "education level": "Educação: Bacharelado em Engenharia de Computação pela Universidade Federal de Itajubá",
   "location": "Localização: Itajubá - Brazil 🇧🇷",
-  "resume": "Currículo"
+  "resume": "Currículo",
+  "wanna hire me": "Quer me contratar? Entre em contato!",
+  "github": "Git Hub",
+  "linkedin": "LinkedIn",
+  "email": "E-mail"
 }

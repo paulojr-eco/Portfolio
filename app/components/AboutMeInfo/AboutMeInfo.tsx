@@ -10,7 +10,7 @@ interface AboutMeProps {
 
 const AboutMeInfo = ({ t }: AboutMeProps) => {
   return (
-    <div className="flex relative flex-col flex-1 gap-y-16 xl:gap-y-[72px] pt-8 xl:pt-16 pb-16 mx-8 xl:mx-32 justify-center items-center">
+    <div className="flex flex-col flex-1 gap-y-16 pt-8 xl:pt-16 items-center pb-16">
       <span className="text-4xl xl:text-5xl font-bold py-4 px-6 border">
         {t('about me')}
       </span>
@@ -30,7 +30,18 @@ const AboutMeInfo = ({ t }: AboutMeProps) => {
           </ul>
         </motion.div>
       </div>
-      <CubeAnimated type="resume" themeColor='bg-green-gradient' t={t} id={1} />
+      <CubeAnimated
+        type="resume"
+        themeColor="bg-green-gradient"
+        t={t}
+        id={1}
+        link={
+          'https://drive.google.com/file/d/1_b2EojkZZTxnEOiwKps1SM0sGeyxYgke/view'
+        }
+        image={'/images/curriculum-vitae.png'}
+        imageGradient={'/images/curriculum-vitae-gradient.png'}
+        alt={'resume'}
+      />
     </div>
   );
 };
