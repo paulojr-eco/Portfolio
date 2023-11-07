@@ -1,6 +1,6 @@
 import '../globals.css';
 import type { Metadata } from 'next';
-import localFont from '@next/font/local';
+import localFont from 'next/font/local';
 import { dir } from 'i18next';
 import { languages } from '@/i18n/settings';
 import NavBar from '../components/NavBar/NavBar';

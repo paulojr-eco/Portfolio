@@ -18,7 +18,7 @@
   "code pix": "Code Pix",
   "code pix description": "The Code Pix system is a system composed of microservices with the common goal of being a transaction hub between banks. To achieve this, concepts such as Hexagonal Architecture, Ports and Adapters, Test-Driven Development (TDD), gRPC, messaging systems, among others, were used.",
   "vakinha burger": "Vakinha Burger",
-  "vakinha burger description": "Vakinha Burger hamburger administration and management application made using the Flutter framework for the web during the DW10 event. The system was built based on Futter Modular and MobX.",
+  "vakinha burger description": "Vakinha Burger hamburger administration and management application made using the Flutter framework for the web during the DW10 event. The system was built based on Flutter Modular and MobX.",
   "Footer First": "Created with ",
   "Footer Last": " by Paulo Paiva",
   "HOME": "HOME",

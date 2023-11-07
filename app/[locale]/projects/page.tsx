@@ -1,16 +1,9 @@
 'use client';
 
 import CardFlip from '@/app/components/CardFlip/CardFlip';
-import cardFlipOptions from '../../components/CardFlip/card-flip-options.json';
+import cardFlipOptions from '@/app/components/CardFlip/card-flip-options';
 import factoryUseTranslation from '@/app/hooks/factoryUseTranslations';
 import NavBar from '@/app/components/NavBar/NavBar';
-
-interface CardFlipOption {
-  name: string;
-  themeColor: string;
-  id: number;
-  link: string;
-}
 
 export default function Projects({
   params: { locale }
@@ -18,7 +11,6 @@ export default function Projects({
   params: { locale: string };
 }) {
   const t = factoryUseTranslation(locale);
-  const cardFlipData: CardFlipOption[] = cardFlipOptions;
   return (
     <div className="flex xl:h-screen w-screen relative overflow-hidden">
       <div className="flex flex-col px-[2vw] pt-[2vw] w-screen z-20">
@@ -28,7 +20,7 @@ export default function Projects({
             {t('PROJECTS')}
           </span>
           <div className="flex flex-col xl:flex-row gap-x-[10vw] gap-y-[10vh]">
-            {cardFlipData.map((card) => (
+            {cardFlipOptions.map((card) => (
               <CardFlip
                 key={card.name}
                 name={card.name}

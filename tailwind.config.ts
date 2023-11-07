@@ -29,11 +29,11 @@ const config: Config = {
         'green-card':
           "url('../public/images/clean-node-api/node-bg.png'), linear-gradient(to bottom, rgba(42, 164, 52, 1), rgba(2, 71, 8, 1))",
         'blue-card':
-          "url('../public/images/code-pix/codepix-bg.png'), linear-gradient(to bottom, rgba(0, 125, 256, 1), rgba(0, 21, 77, 1))",
+          "url('../public/images/task-mate/task-mate-bg.png'), linear-gradient(to bottom, rgba(0, 125, 256, 1), rgba(0, 21, 77, 1))",
         'purple-card':
           "url('../public/images/school-management-system/school-system-bg.png'), linear-gradient(to bottom, rgba(134, 0, 216, 1), rgba(57, 0, 77, 1))",
         'orange-card':
-          "url('../public/images/task-mate/task-mate-bg.png'), linear-gradient(to bottom, rgba(255, 184, 0, 1), rgba(233, 84, 0, 1))",
+          "url('../public/images/vakinha-burger/vakinha-burger-bg.png'), linear-gradient(to bottom, rgba(255, 184, 0, 1), rgba(233, 84, 0, 1))",
         'green-gradient':
           'linear-gradient(to bottom, rgba(42, 164, 52, 1), rgba(2, 71, 8, 1))',
         'blue-gradient':
